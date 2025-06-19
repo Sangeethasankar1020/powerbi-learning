@@ -1,0 +1,39 @@
+{
+  "name": "Flipkart Theme",
+  "dataColors": [
+    "#2874F0",
+    "#FFC200",
+    "#FF6F00",
+    "#1A237E",
+    "#00C853",
+    "#D50000"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#000000",
+  "tableAccent": "#2874F0",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "color": [{ "solid": { "color": "#000000" } }],
+        "fontFamily": [{ "value": "Segoe UI" }],
+        "fontSize": [{ "value": 12 }]
+      },
+      "titleText": {
+        "fontSize": [{ "value": 14 }],
+        "fontFamily": [{ "value": "Segoe UI" }],
+        "color": [{ "solid": { "color": "#2874F0" } }]
+      },
+      "labels": {
+        "color": [{ "solid": { "color": "#333333" } }],
+        "fontSize": [{ "value": 11 }]
+      }
+    },
+    "title": {
+      "*": {
+        "fontSize": [{ "value": 16 }],
+        "fontFamily": [{ "value": "Segoe UI" }],
+        "color": [{ "solid": { "color": "#2874F0" } }]
+      }
+    }
+  }
+}

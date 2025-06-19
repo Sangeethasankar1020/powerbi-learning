@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>65205f23-9b71-4325-a02b-632df8204e5e</rd:ReportID>
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>PBIRB</am:Name>
+      <am:Version>15.7.1814.616</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>PBIRB</am:Name>
+      <am:Version>15.7.1814.616</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2025-06-09T13:01:59.4059270Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="MyWorkspace_evlyn_class_reports">
+      <rd:SecurityType>None</rd:SecurityType>
+      <ConnectionProperties>
+        <DataProvider>PBIDATASET</DataProvider>
+        <ConnectString>Data Source=pbiazure://api.powerbi.com/;Identity Provider="https://login.microsoftonline.com/organizations, https://analysis.windows.net/powerbi/api, f0b72488-7082-488a-a7e8-eada97bd842d";Initial Catalog=sobe_wowvirtualserver-bca663ee-79fa-4796-8204-b5c5e6b42fc0;Integrated Security=ClaimsToken</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>dcbaa543-8c70-4f06-8fa1-b4221951823b</rd:DataSourceID>
+      <rd:PowerBIWorkspaceName>My Workspace</rd:PowerBIWorkspaceName>
+      <rd:PowerBIDatasetName>evlyn_class_reports</rd:PowerBIDatasetName>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>MyWorkspace_evlyn_class_reports</DataSourceName>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>DAX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Age</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Age]</HierarchyUniqueName>
+                      <LevelName>Age</LevelName>
+                      <UniqueName>[Employee Data].[Age].[Age]</UniqueName>
+                    </ID>
+                    <ItemCaption>Age</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Annual Salary</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Annual Salary]</HierarchyUniqueName>
+                      <LevelName>Annual Salary</LevelName>
+                      <UniqueName>[Employee Data].[Annual Salary].[Annual Salary]</UniqueName>
+                    </ID>
+                    <ItemCaption>Annual Salary</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Bonus %</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Bonus %]</HierarchyUniqueName>
+                      <LevelName>Bonus %</LevelName>
+                      <UniqueName>[Employee Data].[Bonus %].[Bonus %]</UniqueName>
+                    </ID>
+                    <ItemCaption>Bonus %</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Business Unit</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Business Unit]</HierarchyUniqueName>
+                      <LevelName>Business Unit</LevelName>
+                      <UniqueName>[Employee Data].[Business Unit].[Business Unit]</UniqueName>
+                    </ID>
+                    <ItemCaption>Business Unit</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>City</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[City]</HierarchyUniqueName>
+                      <LevelName>City</LevelName>
+                      <UniqueName>[Employee Data].[City].[City]</UniqueName>
+                    </ID>
+                    <ItemCaption>City</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Country</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Country]</HierarchyUniqueName>
+                      <LevelName>Country</LevelName>
+                      <UniqueName>[Employee Data].[Country].[Country]</UniqueName>
+                    </ID>
+                    <ItemCaption>Country</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Department</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Department]</HierarchyUniqueName>
+                      <LevelName>Department</LevelName>
+                      <UniqueName>[Employee Data].[Department].[Department]</UniqueName>
+                    </ID>
+                    <ItemCaption>Department</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Employee ID</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Employee ID]</HierarchyUniqueName>
+                      <LevelName>Employee ID</LevelName>
+                      <UniqueName>[Employee Data].[Employee ID].[Employee ID]</UniqueName>
+                    </ID>
+                    <ItemCaption>Employee ID</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Ethnicity</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Ethnicity]</HierarchyUniqueName>
+                      <LevelName>Ethnicity</LevelName>
+                      <UniqueName>[Employee Data].[Ethnicity].[Ethnicity]</UniqueName>
+                    </ID>
+                    <ItemCaption>Ethnicity</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Full Name</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Full Name]</HierarchyUniqueName>
+                      <LevelName>Full Name</LevelName>
+                      <UniqueName>[Employee Data].[Full Name].[Full Name]</UniqueName>
+                    </ID>
+                    <ItemCaption>Full Name</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Job Title</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Job Title]</HierarchyUniqueName>
+                      <LevelName>Job Title</LevelName>
+                      <UniqueName>[Employee Data].[Job Title].[Job Title]</UniqueName>
+                    </ID>
+                    <ItemCaption>Job Title</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Gender</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Gender]</HierarchyUniqueName>
+                      <LevelName>Gender</LevelName>
+                      <UniqueName>[Employee Data].[Gender].[Gender]</UniqueName>
+                    </ID>
+                    <ItemCaption>Gender</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Employee Data</DimensionName>
+                      <HierarchyName>Hire Date</HierarchyName>
+                      <HierarchyUniqueName>[Employee Data].[Hire Date]</HierarchyUniqueName>
+                      <LevelName>Hire Date</LevelName>
+                      <UniqueName>[Employee Data].[Hire Date].[Hire Date]</UniqueName>
+                    </ID>
+                    <ItemCaption>Hire Date</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Model</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties>
+                <IncludeMemberValue>true</IncludeMemberValue>
+              </QueryProperties>
+            </QuerySpecification>
+            <Query>
+              <Statement>EVALUATE SUMMARIZECOLUMNS('Employee Data'[Age], 'Employee Data'[Annual Salary], 'Employee Data'[Bonus %], 'Employee Data'[Business Unit], 'Employee Data'[City], 'Employee Data'[Country], 'Employee Data'[Department], 'Employee Data'[Employee ID], 'Employee Data'[Ethnicity], 'Employee Data'[Full Name], 'Employee Data'[Job Title], 'Employee Data'[Gender], 'Employee Data'[Hire Date])</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <CommandText>EVALUATE SUMMARIZECOLUMNS('Employee Data'[Age], 'Employee Data'[Annual Salary], 'Employee Data'[Bonus %], 'Employee Data'[Business Unit], 'Employee Data'[City], 'Employee Data'[Country], 'Employee Data'[Department], 'Employee Data'[Employee ID], 'Employee Data'[Ethnicity], 'Employee Data'[Full Name], 'Employee Data'[Job Title], 'Employee Data'[Gender], 'Employee Data'[Hire Date])</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Age">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Age]</DataField>
+        </Field>
+        <Field Name="Annual_Salary">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Annual Salary]</DataField>
+        </Field>
+        <Field Name="Bonus__">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Bonus %]</DataField>
+        </Field>
+        <Field Name="Business_Unit">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Business Unit]</DataField>
+        </Field>
+        <Field Name="City">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[City]</DataField>
+        </Field>
+        <Field Name="Country">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Country]</DataField>
+        </Field>
+        <Field Name="Department">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Department]</DataField>
+        </Field>
+        <Field Name="Employee_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Employee ID]</DataField>
+        </Field>
+        <Field Name="Ethnicity">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Ethnicity]</DataField>
+        </Field>
+        <Field Name="Full_Name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Full Name]</DataField>
+        </Field>
+        <Field Name="Job_Title">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Job Title]</DataField>
+        </Field>
+        <Field Name="Gender">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Gender]</DataField>
+        </Field>
+        <Field Name="Hire_Date">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee Data[Hire Date]</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="ReportTitle">
+            <rd:WatermarkTextbox>Title</rd:WatermarkTextbox>
+            <rd:DefaultName>ReportTitle</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Main Details</Value>
+                    <Style>
+                      <FontFamily>Segoe UI Light</FontFamily>
+                      <FontSize>28pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Segoe UI Light</FontFamily>
+                      <FontSize>28pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Height>0.5in</Height>
+            <Width>5.5in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1.1875in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.1875in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.1875in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.53125in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Bonus </Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Department</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox5">
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Annual Salary</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.53125in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Bonus__">
+                          <rd:DefaultName>Bonus__</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Bonus__.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Department">
+                          <rd:DefaultName>Department</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Department.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Drillthrough>
+                                  <ReportName>Department_details</ReportName>
+                                  <Parameters>
+                                    <Parameter Name="DepartmentParam">
+                                      <Value>=Fields!Department.Value</Value>
+                                    </Parameter>
+                                  </Parameters>
+                                </Drillthrough>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Annual_Salary">
+                          <rd:DefaultName>Annual_Salary</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Annual_Salary.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet1</DataSetName>
+            <Top>1.155in</Top>
+            <Left>0.54042in</Left>
+            <Height>1.0625in</Height>
+            <Width>3.5625in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>4.5625in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>6.66667in</Width>
+      <Page>
+        <PageFooter>
+          <Height>2.61667in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="ExecutionTime">
+              <rd:DefaultName>ExecutionTime</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ExecutionTime</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.2in</Top>
+              <Left>4in</Left>
+              <Height>0.25in</Height>
+              <Width>2in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="DepartmentParams">
+      <DataType>String</DataType>
+      <Prompt>Select a Department</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>Sales</Value>
+            <Label>Sales</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>IT</Value>
+            <Label>IT</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+      <cl:ComponentMetadata>
+        <cl:HideUpdateNotifications>true</cl:HideUpdateNotifications>
+      </cl:ComponentMetadata>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>DepartmentParams</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+</Report>

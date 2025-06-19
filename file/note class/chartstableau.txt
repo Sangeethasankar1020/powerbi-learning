@@ -1,0 +1,17 @@
+Charts 
+1)Scatters - by customer , market - make as interactive - change shapes also
+
+2)Drop line - exact sales - select scatter point - drop line - edit 
+
+3)Word Maps - country in text , sales in size , select text . visulation query language . sales in colour. make interactive also
+
+4)Line chart - discrete & continous ,one date field 
+
+blue - discrete 
+green - continous
+
+
+
+
+
+

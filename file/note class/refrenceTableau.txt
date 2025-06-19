@@ -1,0 +1,45 @@
+1)Reference lines - for comparison , category , sub category - right click sales - reference line - average - below, above average - subcategory in text 
+
+--- label as value -edit refrence lines, we can format - fill -differentiate 
+
+--- edit refrence line also - per pane - perc cell
+
+--------------------------
+reference band- select average to maximum - value for exact value.
+
+----------
+distribution table - percentage of sales
+
+---water fall - gant bar
+
+--- 
+maps -
+
+one geo value - latitude , longitude in col & row , double click state , profit in colour 
+state in text 
+
+
+---
+marks changeinto shapes
+---
+group map
+---
+map layers 
+---
+
+top map -- we can add  custom map options
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+

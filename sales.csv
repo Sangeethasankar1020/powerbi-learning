@@ -1,0 +1,12 @@
+| Order ID | Segment     | Region  | Category        | Sub-Category | Product Name       | Sales | Profit | Quantity |
+| -------- | ----------- | ------- | --------------- | ------------ | ------------------ | ----- | ------ | -------- |
+| 1001     | Consumer    | East    | Furniture       | Chairs       | Office Chair A     | 250   | 30     | 3        |
+| 1002     | Corporate   | West    | Technology      | Laptops      | Laptop Model B     | 1200  | 200    | 2        |
+| 1003     | Home Office | Central | Office Supplies | Binders      | Binder C           | 50    | 5      | 6        |
+| 1004     | Consumer    | East    | Furniture       | Tables       | Conference Table D | 800   | -50    | 1        |
+| 1005     | Corporate   | South   | Technology      | Phones       | Smartphone E       | 900   | 180    | 3        |
+| 1006     | Consumer    | East    | Technology      | Accessories  | Mouse F            | 45    | 8      | 4        |
+| 1007     | Home Office | Central | Office Supplies | Paper        | Printer Paper G    | 20    | 2      | 10       |
+| 1008     | Consumer    | South   | Furniture       | Bookcases    | Wooden Bookcase H  | 350   | 60     | 2        |
+| 1009     | Corporate   | West    | Technology      | Tablets      | Tablet I           | 650   | 120    | 1        |
+| 1010     | Home Office | Central | Furniture       | Chairs       | Office Chair J     | 270   | 40     | 2        |

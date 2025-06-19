@@ -1,0 +1,50 @@
+Calculated Field 
+
+cost
+min - analysis
+max
+ceil
+floor
+analysis
+
+Number functions same as calculated field
+
+---
+string functions
+
+upper
+lower
+left most 
+right 
+split - select column - transform
+
+Calculation
+
+1)data base
+2)table related
+
+analysis  grand total
+
+mark - select - sales - qucik table calculation - percentage , above text 
+
+table based
+
+year sales sales - select one sales as percentage triangle - table related calculation 
+
+
+1)cross tab - perecentage - subtotal 
+2) running sum - date - month , sum sales - running total , sales in text 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

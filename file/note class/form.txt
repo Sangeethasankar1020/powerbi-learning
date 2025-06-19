@@ -1,0 +1,16 @@
+form 
+
+1) value - for server side understanding 
+2)Name - Indicate same for radio checkbox 
+3)dropdown - select - option- multile option also 
+4)feedback area - rows- , cols 
+5)Submit button as input or button - value 
+6) assign input field as :
+     readonly 
+     disabled
+     selected
+     checked
+     autofocus 
+     required 
+7) label - for , input - id - while click label it focus on input field.
+8)form - action , method

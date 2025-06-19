@@ -1,0 +1,33 @@
+Optimize Your Data Model
+
+1) Direct query is slower compare to import model 
+
+2) If Our data is large - Direct query 
+
+3) Deleting the un wanted column - when client give raw data - some column does not we need to delete unwanted 
+
+4) External tool bravo - it tell what we are using  - use power query editor remove also check once its not interlinked 
+
+5) deleting the un wanted rows 
+
+6) automatic data time 
+
+File - option - data load - time intelligence - data - its detected the - we can turn off
+
+
+7) choosing data type - right data type is much important 
+
+8) choosing schema - what type of schema we use - star schema is preferrable and also prefer merge rather duplicate values
+
+Aggregration in power Bi 
+
+1)  Aggrgration is used in direct query 
+
+2) we will group certian aggregrate(sum , avg)  table by dim tables  usually used inn direct query mode 
+
+3) use profiler what query hitting a  for sql in direct query mode 
+
+4) create aggregration in sql and use in power bi  - it will act as import mode 
+
+
+5) aggregration - In Model view - click Dim table and manage aggragrations

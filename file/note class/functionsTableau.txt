@@ -1,0 +1,19 @@
+1)Conditional Formatting
+ - Index - less than 10 put in color
+ - Exclude Filters
+ - Last Converts to discrete
+ -Last Less than 5
+- top & bottom 
+-Index less than less than 5
+2)Rank functions
+-table Calculations
+- rank sum sales
+- format wrap
+-rank dense sum sales
+-rank modify
+-rank modify 
+3)Logical functions
+-If else 
+-High profit low profit
+- profit to color part
+-charts
